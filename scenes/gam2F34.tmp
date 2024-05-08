@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://ck57qiha6pnix"]
+[gd_scene load_steps=16 format=3 uid="uid://ck57qiha6pnix"]
 
 [ext_resource type="PackedScene" uid="uid://dxwmnd571iqpc" path="res://scenes/player.tscn" id="1_4lnlo"]
 [ext_resource type="Script" path="res://Assets/scripts/gamemanager.gd" id="1_t5iq1"]
@@ -8,7 +8,6 @@
 [ext_resource type="Script" path="res://Assets/scripts/score.gd" id="5_51t77"]
 [ext_resource type="PackedScene" uid="uid://b6hsubu7xwrvc" path="res://kill_area.tscn" id="5_82v6k"]
 [ext_resource type="PackedScene" uid="uid://chx1itdcov5vr" path="res://scenes/enemy.tscn" id="6_5pifs"]
-[ext_resource type="FontFile" uid="uid://cnjjclx704afd" path="res://Assets/fonts/PixelOperator8.ttf" id="7_uilmc"]
 [ext_resource type="FontFile" uid="uid://ds7wmcv7f3g7c" path="res://Assets/fonts/PixelOperator8-Bold.ttf" id="7_vd7ee"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y6su8"]
@@ -483,11 +482,11 @@ position_smoothing_enabled = true
 
 [node name="Score" type="Label" parent="player"]
 offset_left = -4.0
-offset_top = -29.0
+offset_top = -31.0
 offset_right = 112.0
-offset_bottom = -20.0
+offset_bottom = -22.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_fonts/font = ExtResource("7_uilmc")
+theme_override_fonts/font = ExtResource("7_vd7ee")
 theme_override_font_sizes/font_size = 8
 text = "0"
 script = ExtResource("5_51t77")
