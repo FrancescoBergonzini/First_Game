@@ -13,3 +13,7 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# Ignore files with extension`.exe`
+*.class
+*.exe
