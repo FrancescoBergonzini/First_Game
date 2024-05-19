@@ -1,14 +1,18 @@
 extends Node
 
 func _ready():
-	var result = add(5.1,5.1)
-	result = add(result, result)
-	print(result)
-
-#Funzione con parametri e return tipizzati
-func add(num1: float, num2: float) -> int:
-	var result = num1 + num2;
-	return result
-
-
+    #randf tra 0 e 1
+    var roll = randf()
+    if(roll < 0.8):
+        print("You lose")
+    else:
+        print("You win")
+        
+    #
+    var character_height = randi_range(0, 10)
+    print(character_height)
+    
+    #
+    var test = randf_range(0, 10)
+    print(test)
 
