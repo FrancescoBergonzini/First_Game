@@ -1,14 +1,33 @@
 extends Node
 
 func _ready():
-	var items = ["Potion",3,6] #mixing data type
-	var objects: Array[String] = ["Potion", "Sword"]
+	var items : Array[String] = ["Potato", "Apple", "Ass"]
+	
+	for item in items:
+		if(item.length() < 4):
+			print(item)
 	
 	#
-	objects[1] = "Potato"
-	print(items[0], objects[1])
+	for n in 8: #n is corrent iteration
+		print(n)
 	
 	#
-	items.remove_at(2)
-	items.append("Overpowerd spear")
+	var glass := 0.0
+	var safe_count := 1
+	
+	while glass < 0.5:
+		#glass += randf_range(0.01, 0.1)
+		
+		#
+		safe_count += 1
+		
+		if(safe_count > 1000):
+			printerr("Exit while for overflow")
+			break
+			
+		print(glass)
+		
+	print("The glass is half full")
+	
+	pass
 
