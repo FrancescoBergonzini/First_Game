@@ -1,18 +1,14 @@
 extends Node
 
 func _ready():
-    #randf tra 0 e 1
-    var roll = randf()
-    if(roll < 0.8):
-        print("You lose")
-    else:
-        print("You win")
-        
-    #
-    var character_height = randi_range(0, 10)
-    print(character_height)
-    
-    #
-    var test = randf_range(0, 10)
-    print(test)
+	var items = ["Potion",3,6] #mixing data type
+	var objects: Array[String] = ["Potion", "Sword"]
+	
+	#
+	objects[1] = "Potato"
+	print(items[0], objects[1])
+	
+	#
+	items.remove_at(2)
+	items.append("Overpowerd spear")
 
