@@ -1,33 +1,22 @@
 extends Node
 
 func _ready():
-	var items : Array[String] = ["Potato", "Apple", "Ass"]
-	
-	for item in items:
-		if(item.length() < 4):
-			print(item)
-	
-	#
-	for n in 8: #n is corrent iteration
-		print(n)
-	
-	#
-	var glass := 0.0
-	var safe_count := 1
-	
-	while glass < 0.5:
-		#glass += randf_range(0.01, 0.1)
+	var players = {
+		"Luca": 1,
+		"Marco": 2,
+		"Francesco": 4, 
+		}
 		
-		#
-		safe_count += 1
-		
-		if(safe_count > 1000):
-			printerr("Exit while for overflow")
-			break
-			
-		print(glass)
-		
-	print("The glass is half full")
+	players["Marco"] = 10
+	players["Montone"] = 12
 	
-	pass
+	for name in players:
+		print(name + ": " + str(players[name]))
+
+	var advance_players = {
+		"LUCA": {"Level": 1, "Health": 10, "Power": 5},
+		"MARCO": {"Level": 1, "Health": 20, "Power": 10},
+	}
+	
+	print(advance_players["MARCO"]["Power"])
 
