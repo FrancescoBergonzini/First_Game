@@ -1,17 +1,20 @@
 extends Node
 
-enum OBJ_State
-{
-	ALLY,
-	NEUTRAL,
-	ENEMY
-}
+enum Stagioni { INVERNO, AUTUNNO, ESTATE, PRIMAVERA, NONE}
 
-@export var current_state : OBJ_State
+@export var stagione = Stagioni.INVERNO
 
 func _ready():
-	print(current_state)
+	match stagione:
+		Stagioni.INVERNO:
+			print("Inverno")
+		Stagioni.AUTUNNO:
+			print("Autunno")
+		Stagioni.PRIMAVERA:
+			print("Primavera")
+		Stagioni.ESTATE:
+			print("Estate")
+		_:
+			print("default")
+			
 	pass
-
-func change_state(OBJ_State):
-	current_state = OBJ_State

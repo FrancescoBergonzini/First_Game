@@ -4,6 +4,7 @@
 
 [node name="Main" type="Node"]
 script = ExtResource("1_o8n20")
+stagione = 4
 
 [node name="Label" type="Label" parent="."]
 anchors_preset = 8
