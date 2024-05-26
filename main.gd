@@ -1,9 +1,15 @@
 extends Node
 
-@export var character_to_kill : Chracter
+var chest := Equipment.new()
+var legs := Equipment.new()
 
 func _ready():
-	character_to_kill.die()
-	pass
+	chest.armor = 20
+	legs.wight = 10
+	print(chest.armor)
+
+class Equipment:
+	var armor := 10
+	var wight := 5
 		
 

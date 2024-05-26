@@ -3,9 +3,8 @@
 [ext_resource type="Script" path="res://main.gd" id="1_o8n20"]
 [ext_resource type="Script" path="res://Character.gd" id="2_t7xhw"]
 
-[node name="Main" type="Node" node_paths=PackedStringArray("character_to_kill")]
+[node name="Main" type="Node"]
 script = ExtResource("1_o8n20")
-character_to_kill = NodePath("Character3")
 
 [node name="Character" type="Node" parent="."]
 script = ExtResource("2_t7xhw")
