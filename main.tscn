@@ -1,8 +1,23 @@
-[gd_scene load_steps=2 format=3 uid="uid://o46srfndfdbw"]
+[gd_scene load_steps=3 format=3 uid="uid://o46srfndfdbw"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_o8n20"]
+[ext_resource type="Script" path="res://Character.gd" id="2_t7xhw"]
 
-[node name="Main" type="Node"]
+[node name="Main" type="Node" node_paths=PackedStringArray("character_to_kill")]
 script = ExtResource("1_o8n20")
+character_to_kill = NodePath("Character3")
 
-[connection signal="healthChange" from="." to="." method="_on_health_change"]
+[node name="Character" type="Node" parent="."]
+script = ExtResource("2_t7xhw")
+profession = "Chef"
+health = 10
+
+[node name="Character2" type="Node" parent="."]
+script = ExtResource("2_t7xhw")
+profession = "Comic"
+health = 30
+
+[node name="Character3" type="Node" parent="."]
+script = ExtResource("2_t7xhw")
+profession = "Smith"
+health = 15
