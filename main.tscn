@@ -1,22 +1,10 @@
 [gd_scene load_steps=3 format=3 uid="uid://o46srfndfdbw"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_o8n20"]
-[ext_resource type="Script" path="res://Character.gd" id="2_t7xhw"]
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="2_u3q04"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_o8n20")
 
-[node name="Character" type="Node" parent="."]
-script = ExtResource("2_t7xhw")
-profession = "Chef"
-health = 10
-
-[node name="Character2" type="Node" parent="."]
-script = ExtResource("2_t7xhw")
-profession = "Comic"
-health = 30
-
-[node name="Character3" type="Node" parent="."]
-script = ExtResource("2_t7xhw")
-profession = "Smith"
-health = 15
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("2_u3q04")
